@@ -1,0 +1,6 @@
+<?php include(__DIR__ . '/../../errorHeader.php'); ?>
+<h1><?php echo $this->statusCode; ?>: <?php echo $this->statusCodeMessage; ?></h1>
+<?php if ('development' == ENVIRONMENT) : ?>
+<pre><?php if ('development' == ENVIRONMENT) { echo xdebug_print_function_stack(); } ?></pre>
+<?php endif; ?>
+<?php include(__DIR__ . '/../../errorFooter.php'); ?>
