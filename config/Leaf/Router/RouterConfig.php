@@ -11,7 +11,7 @@ return array(
     'routes' => array(
         'default' => array(
             'className' => 'Leaf\Route\RouteDefault',
-            'basePath' => '/core/gettoken',
+            'basePath' => '',
         )
     )
 );
